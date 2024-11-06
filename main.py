@@ -3,7 +3,7 @@ import cv2 as cv
 
 model = YOLO('models/best.pt')
 
-img = cv.imread("Images/face.jpeg")
+img = cv.imread("Images/face.jpeg") #Trained on custom dataset
 
 results = model(img)
 
